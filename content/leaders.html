@@ -1,9 +1,130 @@
 <template name="leaders">
-	 {{> navbar }} 
- 	{{> search }}
+    {{> navbar }}
+    {{> search }}
 
- 	<div class="container">
- 		<h2>Leader sayfası</h2>
- 		 {{>footer}}
- 	</div>
+    <div class="container">
+        <h2>Leader sayfası</h2>
+
+        <div class="row">
+            <div role="tabpanel">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#daily" aria-controls="daily" role="tab"
+                                                              data-toggle="tab"><i class="glyphicon glyphicon-time"></i>
+                        Daily</a></li>
+                    <li role="presentation"><a href="#monthly" aria-controls="monthly" role="tab" data-toggle="tab"><i
+                            class="glyphicon glyphicon-time"></i> Monthly</a></li>
+                    <li role="presentation"><a href="#alltime" aria-controls="alltime" role="tab" data-toggle="tab"><i
+                            class="glyphicon glyphicon-time"></i> All Time</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="daily">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#Rank</th>
+                                <th>#Nickname</th>
+                                <th>#Score</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=1" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=2" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=3" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=4" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="monthly">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#Rank</th>
+                                <th>#Nickname</th>
+                                <th>#Score</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=1" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=2" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=3" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=4" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="alltime">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#Rank</th>
+                                <th>#Nickname</th>
+                                <th>#Score</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=1" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=2" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=3" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="http://lorempixel.com/60/60/people/?v=4" alt=""/> JohnDoe</td>
+                                <td>1000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {{>footer}}
+    </div>
 </template>

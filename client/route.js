@@ -15,4 +15,8 @@ if ( Meteor.isClient )
 	Router.route('/profile/settings',function(){
 		this.render('settings');
 	});
+
+    Router.route('/play', function () {
+        this.render('play');
+    });
 }
