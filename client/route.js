@@ -11,4 +11,8 @@ if ( Meteor.isClient )
 	Router.route('/leaders',function(){
 		this.render('leaders');
 	});
+
+	Router.route('/profile/settings',function(){
+		this.render('settings');
+	});
 }
